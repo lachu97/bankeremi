@@ -21,9 +21,11 @@ i = fields.i
 year = fields.y
 n=int(year)*12
 r=float(i)/12
-print("Principal= "+str(p))
+
 emi=interest(int(p),r,n)
 amount=emi*n - float(p)
+
+print("Principal= "+str(p))
 print("Monthly EMI in Rs for {0} months".format(n))
 print(math.ceil(emi))
 print("Total Amount Paid as Interest for the Whole amount in Rs= ")
